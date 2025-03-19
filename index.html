@@ -117,20 +117,19 @@
      height: auto;
      display: block;
  }
- .concept-image {
-     width: 30%; /* Reducing to 30% of its original size */
-     width: 100%; /* Reducing to 30% of its original size */
-     height: auto;
-     display: block;
-     margin: 0 auto; /* Centers the image */
- }
- .concept-image {
-     max-width: 210px; /* If the original width was 700px, 30% of it */
-     max-width: 700px; /* If the original width was 700px, 30% of it */
-     height: auto;
-     display: block;
-     margin: 0 auto;
- }
+.concept-image {
+    width: 140%; /* Increase size by 40% */
+    height: auto;
+    display: block;
+    margin: 20px 0; /* Adds spacing */
+}
+  
+.concept-section {
+    display: flex;
+    align-items: center; /* Aligns image with text */
+    gap: 20px; /* Adds space between text and image */
+}
+
  }
      </style>
  </head>
@@ -178,15 +177,16 @@
      <div class="container">
      <p class="description">BUILT ON APECHAIN</p>
          <div class="header">
-             <h1>THE CONCEPT</h1>
-             <p class="description">
-                Otherides, a fantastical NFT collection of amazing vehicles purpose built for the metaverse.
-             </p>
-         </div>
- <div class="concept-section">
-     <div class="concepts-container">
-         <img src="stack.png" alt="Concept" class="concept-image">
-     </div>
+     <div class="concept-section">
+    <div class="concept-text">
+        <h1>THE CONCEPT</h1>
+        <p class="description">
+            Otherides, a fantastical NFT collection of amazing vehicles purpose-built for the metaverse.
+        </p>
+    </div>
+    <img src="stack.png" alt="Concept" class="concept-image">
+</div>
+
         </br>
  </br>
  </br>
