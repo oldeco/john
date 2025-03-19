@@ -13,27 +13,16 @@
         }
         
         body {
-            background-image: url('purple-gradient.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            background: linear-gradient(135deg, #2b1367 0%, #1a0a46 100%);
             color: white;
             min-height: 100vh;
+            padding: 5% 8%;
         }
         
-        .landing-section, .concept-section {
-            padding: 5% 8%;
-            min-height: 100vh;
+        .container {
             display: flex;
             flex-direction: column;
-        }
-
-        .landing-section {
             gap: 60px;
-        }
-        
-        .concept-section {
-            justify-content: center;
         }
         
         .header h1 {
@@ -91,28 +80,6 @@
             transform: rotate(45deg);
         }
         
-        .subtitle {
-            font-size: 1rem;
-            letter-spacing: 3px;
-            margin-bottom: 40px;
-            font-weight: 300;
-        }
-        
-        .big-heading {
-            font-size: 7rem;
-            font-weight: bold;
-            letter-spacing: 2px;
-            margin-bottom: 40px;
-            text-transform: uppercase;
-        }
-        
-        .concept-description {
-            font-size: 1.2rem;
-            max-width: 800px;
-            line-height: 1.6;
-            margin-bottom: 60px;
-        }
-        
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 3rem;
@@ -126,24 +93,11 @@
                 width: 180px;
                 height: 135px;
             }
-            
-            .big-heading {
-                font-size: 3.5rem;
-            }
-            
-            .subtitle {
-                font-size: 0.8rem;
-            }
-            
-            .concept-description {
-                font-size: 1rem;
-            }
         }
     </style>
 </head>
 <body>
-    <!-- Landing Section -->
-    <div class="landing-section">
+    <div class="container">
         <div class="header">
             <h1>OTHERIDES</h1>
             <p class="description">
@@ -157,20 +111,6 @@
             </div>
         </div>
         
-        <div class="scroll-indicator">
-            <div class="scroll-circle">
-                <i class="scroll-arrow"></i>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Concept Section -->
-    <div class="concept-section">
-        <div class="subtitle">B U I L T &nbsp; O N &nbsp; A P E C H A I N</div>
-        <h2 class="big-heading">THE CONCEPT</h2>
-        <p class="concept-description">
-            Otherides, a fantastical NFT collection of amazing vehicles purpose built for the metaverse.
-        </p>
         <div class="scroll-indicator">
             <div class="scroll-circle">
                 <i class="scroll-arrow"></i>
