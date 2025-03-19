@@ -1,289 +1,290 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OTHERIDES</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-        
-        body {
-    background: linear-gradient(135deg, #0a001f 0%, #22004b 50%, #4c00a3 100%);
-    color: white;
-    min-height: 100vh;
-    padding: 5% 8%;
-
-        }
-        
-        .container {
-            display: flex;
-            flex-direction: column;
-            gap: 60px;
-        }
-        
-        .header h1 {
-            font-size: 6rem;
-            font-weight: bold;
-            letter-spacing: 2px;
-            margin-bottom: 40px;
-        }
-        
-        .description {
-            max-width: 800px;
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
-        
-        .image-container {
-            display: flex;
-            margin-top: 20px;
-        }
-        
-        .vehicle-card {
-            width: 400px;
-            height: 300px;
-            overflow: hidden;
-            border-radius: 20px;
-        }
-        
-        .vehicle-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .scroll-indicator {
-            margin-top: 60px;
-            display: flex;
-            justify-content: flex-start;
-        }
-        
-        .scroll-circle {
-            width: 60px;
-            height: 60px;
-            border: 2px solid white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .scroll-arrow {
-            border: solid white;
-            border-width: 0 3px 3px 0;
-            display: inline-block;
-            padding: 6px;
-            transform: rotate(45deg);
-        }
-        
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 3rem;
-            }
-            
-            .description {
-                font-size: 1rem;
-            }
-            
-            .vehicle-card {
-                width: 180px;
-                height: 135px;
-            }
-        }
-.apes-container {
-    margin-bottom: 60px;
-    width: 100%;
-    max-width: 400px; /* Adjust this value to control the size */
-}
-
-.apes-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-.nft-container {
-    margin-bottom: 60px;
-    width: 200%;
-    max-width: 700px; /* Adjust this value to control the size */
-}
-
-.nft-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-.concept-image {
-    width: 140%; /* Increase size by 40% */
-    height: auto;
-    display: block;
-    margin: 20px 0; /* Adds spacing */
-}
-  
-.concept-section {
-    display: flex;
-    align-items: center; /* Aligns image with text */
-    gap: 20px; /* Adds space between text and image */
-}
-
-}
-    </style>
-</head>
-<body>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>OTHERIDES</title>
+     <style>
+         * {
+             margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+             font-family: Arial, sans-serif;
+         }
+ 
+         body {
+     background: linear-gradient(135deg, #0a001f 0%, #22004b 50%, #4c00a3 100%);
+     color: white;
+     min-height: 100vh;
+     padding: 5% 8%;
+ 
+         }
+ 
+         .container {
+             display: flex;
+             flex-direction: column;
+             gap: 60px;
+         }
+ 
+         .header h1 {
+             font-size: 6rem;
+             font-weight: bold;
+             letter-spacing: 2px;
+             margin-bottom: 40px;
+         }
+ 
+         .description {
+             max-width: 800px;
+             font-size: 1.1rem;
+             line-height: 1.6;
+         }
+ 
+         .image-container {
+             display: flex;
+             margin-top: 20px;
+         }
+ 
+         .vehicle-card {
+             width: 400px;
+             height: 300px;
+             overflow: hidden;
+             border-radius: 20px;
+         }
+ 
+         .vehicle-card img {
+             width: 100%;
+             height: 100%;
+             object-fit: cover;
+         }
+ 
+         .scroll-indicator {
+             margin-top: 60px;
+             display: flex;
+             justify-content: flex-start;
+         }
+ 
+         .scroll-circle {
+             width: 60px;
+             height: 60px;
+             border: 2px solid white;
+             border-radius: 50%;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+         }
+ 
+         .scroll-arrow {
+             border: solid white;
+             border-width: 0 3px 3px 0;
+             display: inline-block;
+             padding: 6px;
+             transform: rotate(45deg);
+         }
+ 
+         @media (max-width: 768px) {
+             .header h1 {
+                 font-size: 3rem;
+             }
+ 
+             .description {
+                 font-size: 1rem;
+             }
+ 
+             .vehicle-card {
+                 width: 180px;
+                 height: 135px;
+             }
+         }
+ .apes-container {
+     margin-bottom: 60px;
+     width: 100%;
+     max-width: 400px; /* Adjust this value to control the size */
+ }
+ 
+ .apes-image {
+     width: 100%;
+     height: auto;
+     display: block;
+ }
+ .nft-container {
+     margin-bottom: 60px;
+     width: 200%;
+     max-width: 700px; /* Adjust this value to control the size */
+ }
+ 
+ .nft-image {
+     width: 100%;
+     height: auto;
+     display: block;
+ }
+ .concept-image {
+     width: 30%; /* Reducing to 30% of its original size */
+     width: 100%; /* Reducing to 30% of its original size */
+     height: auto;
+     display: block;
+     margin: 0 auto; /* Centers the image */
+ }
+ .concept-image {
+     max-width: 210px; /* If the original width was 700px, 30% of it */
+     max-width: 700px; /* If the original width was 700px, 30% of it */
+     height: auto;
+     display: block;
+     margin: 0 auto;
+ }
+ }
+     </style>
+ </head>
+ <body>
+     <div class="container">
+         <div class="header">
+             <h1>OTHERIDES</h1>
+             <p class="description">
+                 A collection of vehicles from the fantastical race game of [redacted] in the Otherside metaverse. Purpose-built racers, customized and tuned by each racing faction to their specifications, each Otheride car is a racing beast built to win.
+             </p>
+         </div>
+           <div class="image-container">
+             <div class="vehicle-card">
+                 <img src="kkkkjhbhbhb.png" alt="Racing vehicle in snowy mountain terrain">
+             </div>
+         </div>
+     </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+         <div class="scroll-indicator">
+             <div class="scroll-circle">
+                 <i class="scroll-arrow"></i>
+             </div>
+         </div>
+     </div>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+     <div class="container">
+     <p class="description">BUILT ON APECHAIN</p>
+         <div class="header">
+             <h1>THE CONCEPT</h1>
+             <p class="description">
+                Otherides, a fantastical NFT collection of amazing vehicles purpose built for the metaverse.
+             </p>
+         </div>
+ <div class="concept-section">
+     <div class="concepts-container">
+         <img src="stack.png" alt="Concept" class="concept-image">
+     </div>
+        </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+     <div class="container">
+     <p class="description">MEET THE TEAM</p>
+         <div class="header">
+             <h1>APES</h1>
+             <p class="description">
+                The team consists of vetted apes within the space that continued to build and product utility within the space. Each ape brings unique value to the table for the efforts to be shown.
+             </p>
+ <!-- Apes Section -->
+ <div class="apes-section">
+     <div class="apes-container">
+         <img src="xz.png" alt="Two Bored Ape NFTs with a plus sign between them" class="apes-image">
+     </div>
+ </div>
+ </div>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ 
+ 
+  <div class="container">
+     <p class="description">COMING SOON</p>
+         <div class="header">
+             <h1>NFT COLLECTION</h1>
+             <p class="description">
+                (MORE DETAILS COMING SOON)
+             </p>
+ <div class="nft-section">
+     <div class="nft-container">
+         <img src="axxx.png" alt="coming soon" class="nft-image">
+     </div>
+ </div>
+ </div>
+         </div>
+        </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
+ </br>
     <div class="container">
-        <div class="header">
-            <h1>OTHERIDES</h1>
-            <p class="description">
-                A collection of vehicles from the fantastical race game of [redacted] in the Otherside metaverse. Purpose-built racers, customized and tuned by each racing faction to their specifications, each Otheride car is a racing beast built to win.
-            </p>
-        </div>
-          <div class="image-container">
-            <div class="vehicle-card">
-                <img src="kkkkjhbhbhb.png" alt="Racing vehicle in snowy mountain terrain">
-            </div>
-        </div>
-    </br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-        <div class="scroll-indicator">
-            <div class="scroll-circle">
-                <i class="scroll-arrow"></i>
-            </div>
-        </div>
-    </div>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-    <div class="container">
-    <p class="description">BUILT ON APECHAIN</p>
-        <div class="header">
-            <h1>THE CONCEPT</h1>
-            <p class="description">
-               Otherides, a fantastical NFT collection of amazing vehicles purpose built for the metaverse.
-            </p>
-        </div>
-<div class="concept-section">
-    <div class="concepts-container">
-        <img src="stack.png" alt="Concept" class="concept-image">
-    </div>
-       </br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-    <div class="container">
-    <p class="description">MEET THE TEAM</p>
-        <div class="header">
-            <h1>APES</h1>
-            <p class="description">
-               The team consists of vetted apes within the space that continued to build and product utility within the space. Each ape brings unique value to the table for the efforts to be shown.
-            </p>
-<!-- Apes Section -->
-<div class="apes-section">
-    <div class="apes-container">
-        <img src="xz.png" alt="Two Bored Ape NFTs with a plus sign between them" class="apes-image">
-    </div>
-</div>
-</div>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-
-
- <div class="container">
-    <p class="description">COMING SOON</p>
-        <div class="header">
-            <h1>NFT COLLECTION</h1>
-            <p class="description">
-               (MORE DETAILS COMING SOON)
-            </p>
-<div class="nft-section">
-    <div class="nft-container">
-        <img src="axxx.png" alt="coming soon" class="nft-image">
-    </div>
-</div>
-</div>
-        </div>
-       </br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-   <div class="container">
-    <p class="description">ANY QUESTIONS OR WANT TO HELP</p>
-        <div class="header">
-            <h1>LET'S CONNECT</h1>
-            <p class="description">
-               Reach out directly on X OR email  _______   and we'll be in touch!
-            </p>
-        </div>
-       </br>
-</br>
-</br>
-</br>
-</body>
-</html>
+     <p class="description">ANY QUESTIONS OR WANT TO HELP</p>
+         <div class="header">
+             <h1>LET'S CONNECT</h1>
+             <p class="description">
+                Reach out directly on X OR email  _______   and we'll be in touch!
+             </p>
+         </div>
+        </br>
+ </br>
+ </br>
+ </br>
+ </body>
+ </html>
