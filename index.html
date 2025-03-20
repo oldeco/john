@@ -136,6 +136,38 @@
             .concept-image {
                 width: 100%;
             }
+.scroll-indicator {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.scroll-circle {
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.scroll-arrow {
+    width: 12px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 6px;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.scroll-circle:hover .scroll-arrow {
+    transform: rotate(45deg) translateY(5px); /* Moves down slightly on hover */
+}
+
         }
     </style>
 </head>
@@ -160,11 +192,12 @@
  </br>
  </br>
  </br>
-         <div class="scroll-indicator">
-             <div class="scroll-circle">
-                 <i class="scroll-arrow"></i>
-             </div>
-         </div>
+        <div class="scroll-indicator">
+    <div class="scroll-circle">
+        <div class="scroll-arrow"></div>
+    </div>
+</div>
+
      </div>
  </br>
  </br>
