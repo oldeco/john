@@ -38,17 +38,7 @@
             line-height: 1.6;
         }
 
-        /* Universal Image Hover Effect */
-        img {
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
-        }
-
-        img:hover {
-            transform: scale(1.1); /* Enlarge slightly */
-            box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.3);
-        }
-
-        /* Vehicle Image */
+        /* Hover Effect Only for the First Image (Vehicle) */
         .vehicle-card {
             width: 400px;
             height: 300px;
@@ -60,33 +50,31 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
 
         .vehicle-card img:hover {
-            transform: scale(1.1);
-            box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.2);
+            transform: scale(1.1); /* Slightly enlarges */
+            box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.3); /* Subtle glow effect */
         }
 
-        /* Concept Image (stack.png) */
-        .concept-section {
-            display: flex;
-            align-items: center;
-            gap: 20px;
+        /* Remove hover effects for other images */
+        .concept-image, 
+        .apes-image, 
+        .nft-image {
+            transition: none;
         }
 
-        .concept-image {
-            width: 70%; /* Enlarged by 40% */
-            height: auto;
-            display: block;
-            margin-left: 0; /* Aligns left */
+        .concept-image:hover, 
+        .apes-image:hover, 
+        .nft-image:hover {
+            transform: none;
+            box-shadow: none;
+            opacity: 1;
+            filter: none;
         }
 
-        .concept-image:hover {
-            transform: scale(1.1);
-            box-shadow: 0px 10px 25px rgba(255, 255, 255, 0.3);
-        }
-
-        /* Apes Section (xz.png) */
+        /* Apes Section */
         .apes-container {
             margin-bottom: 60px;
             width: 100%;
@@ -99,12 +87,7 @@
             display: block;
         }
 
-        .apes-image:hover {
-            transform: scale(1.1);
-            filter: brightness(1.2);
-        }
-
-        /* NFT Collection Image (axxx.png) */
+        /* NFT Collection */
         .nft-container {
             margin-bottom: 60px;
             width: 200%;
@@ -117,9 +100,18 @@
             display: block;
         }
 
-        .nft-image:hover {
-            transform: scale(1.1);
-            opacity: 0.9;
+        /* Concept Image */
+        .concept-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .concept-image {
+            width: 50%;
+            height: auto;
+            display: block;
+            margin-left: 0;
         }
 
         /* Responsive Adjustments */
